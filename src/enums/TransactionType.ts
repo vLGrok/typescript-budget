@@ -1,0 +1,19 @@
+// src/enums/TransactionType.ts
+export enum TransactionType {
+    NormalCharge = "NormalCharge",             // Most common type of transaction
+    CardPayment = "CardPayment",               // Payments made to reduce the balance
+    InterestCharge = "InterestCharge",         // Interest charges for carrying a balance
+    Fee = "Fee",                               // Various fees such as late fees, annual fees
+    CashAdvance = "CashAdvance",               // Cash withdrawal using the credit card
+    BalanceTransfer = "BalanceTransfer",       // Transfer of balance from one card to another
+    ForeignTransaction = "ForeignTransaction", // Transactions made in foreign currencies
+    Refund = "Refund",                         // Refunds of previous charges
+    Reversal = "Reversal",                     // Reversal of incorrect or fraudulent charges
+    Chargeback = "Chargeback",                 // Disputed transactions reversed by the issuer
+    Installment = "Installment",               // Payments as part of an installment plan
+    PreAuthorization = "PreAuthorization",     // Holds placed on the card for future transactions
+    PendingTransaction = "PendingTransaction", // Authorized but not yet posted transactions
+    CashBackReward = "CashBackReward",         // Cashback rewards credited to the account
+    RewardRedemption = "RewardRedemption",     // Points or rewards redeemed by the cardholder
+    Credit = "Credit",                         // Promotional or goodwill credits applied
+}
