@@ -17,3 +17,25 @@ export enum TransactionType {
     RewardRedemption = "RewardRedemption",     // Points or rewards redeemed by the cardholder
     Credit = "Credit",                         // Promotional or goodwill credits applied
 }
+
+
+// Description Map
+export const TransactionTypeDescriptions = new Map<TransactionType, string>([
+    [TransactionType.NormalCharge, "Most common type of transaction"],
+    [TransactionType.CardPayment, "Payments made to reduce the balance"],
+    [TransactionType.InterestCharge, "Interest charges for carrying a balance"],
+    [TransactionType.Fee, "Various fees such as late fees, annual fees"],
+    [TransactionType.CashAdvance, "Cash withdrawal using the credit card"],
+    [TransactionType.BalanceTransfer, "Transfer of balance from one card to another"],
+    [TransactionType.ForeignTransaction, "Transactions made in foreign currencies"],
+    [TransactionType.Refund, "Refunds of previous charges"],
+    [TransactionType.Reversal, "Reversal of incorrect or fraudulent charges"],
+    [TransactionType.Chargeback, "Disputed transactions reversed by the issuer"],
+    [TransactionType.Installment, "Payments as part of an installment plan"],
+    [TransactionType.PreAuthorization, "Holds placed on the card for future transactions"],
+    [TransactionType.PendingTransaction, "Authorized but not yet posted transactions"],
+    [TransactionType.CashBackReward, "Cashback rewards credited to the account"],
+    [TransactionType.RewardRedemption, "Points or rewards redeemed by the cardholder"],
+    [TransactionType.Credit, "Promotional or goodwill credits applied"],
+  ]);
+  
